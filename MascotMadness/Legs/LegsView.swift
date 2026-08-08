@@ -2,10 +2,20 @@ import SwiftUI
 
 var legs: some BodyPart {
     Legs {
-        ZStack {
-            Circle()
-                .frame(width: 200, height: 200)
-                .foregroundStyle(.yellow)
+        VStack{
+            HStack{
+                Spacer()
+                Rectangle()
+                    .fill(.blue)
+                    .frame(width:200, height:670)
+                Spacer()
+                Rectangle()
+                    .fill(.yellow)
+                    .frame(width:200, height:670)
+                Spacer()
+                
+            }
+            
         }
     }
 }
